@@ -16,7 +16,7 @@
           <div class="flex flex-row w-1/2 bg-white rounded-lg px-3 py-10">
             <div>
               <img
-                src="~/assets/Frame 1442.png"
+                src="~/assets/Frame1442.png"
                 alt=""
                 class="w-auto h-auto mr-6"
               />
@@ -164,15 +164,15 @@ watch(socialChart, (nSC) => {
   socialChart.value = nSC;
   pieD.value = socialChart.value.data;
   pieD.value["datasets"] = pieD.value["dataset"];
-  pieD.value.harr = []
-  pieD.value.harr[0] = pieD.value.datasets
+  pieD.value.harr = [];
+  pieD.value.harr[0] = pieD.value.datasets;
   pieD.value["datasets"] = pieD.value["harr"];
 
   delete pieD.value["dataset"];
   delete pieD.value["harr"];
-  pieD.value.datasets['0'].backgroundColor = ["#4267B2", "#0077B5", "#1DA1F2"];
-  console.log(pieD.value)
-  console.log(pieD.value.datasets['0'])
+  pieD.value.datasets["0"].backgroundColor = ["#4267B2", "#0077B5", "#1DA1F2"];
+  console.log(pieD.value);
+  console.log(pieD.value.datasets["0"]);
 });
 const pieD = ref({});
 const data = ref({
